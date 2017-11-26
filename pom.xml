@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>HttpAPIGenerator</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Automatically generating controller(HTTP API) for service</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -35,10 +35,22 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>4.3.0.RELEASE</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.21</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
 		</dependency>
 	</dependencies>
 
